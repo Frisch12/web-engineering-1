@@ -1,0 +1,50 @@
+﻿@import "sass-lib/border";
+
+//html, body {
+//	background: #EEE;
+//}
+
+md-grid-tile-footer {
+	height: 36px!important;
+	background: rgba(0,0,0, 0.68)!important;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+md-list-item.selected md-content {
+	background: rgba(0,0,0, 0.25)!important;
+}
+
+md-list-item md-content {
+	background: rgb(255,255,255)!important;
+	transition: background .5s;
+}
+
+span.small {
+	color: rgba(0,0,0,0.40);
+	font-size: 60%;
+	align-self: center;
+}
+
+.dirty {
+	color: rgb(0, 150, 0);
+}
+
+.invalid {
+	display: inline-block;
+	position: relative;
+}
+.invalid:before {
+	content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+	font-size: 0.6em;
+	font-weight: 700;
+	font-family: serif;
+	color: red;
+	width: 100%;
+	position: absolute;
+	top: 12px;
+	left: -1px;
+	overflow: hidden;
+}

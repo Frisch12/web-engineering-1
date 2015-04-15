@@ -1,2 +1,4 @@
 .idea/
 .sass-cache/
+scripts/application/*.js
+scripts/application/*.map

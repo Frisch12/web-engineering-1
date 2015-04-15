@@ -1,14 +1,27 @@
 <!doctype html>
-<html>
+<html ng-app="app">
 	<head>
 		<title>Mein Super Verein</title>
+		<script type="text/javascript" src="scripts/jquery-2.1.3.js"></script>
+		<script type="text/javascript" src="scripts/angular/angular.min.js"></script>
+		<script type="text/javascript" src="scripts/angular/angular-route.min.js"></script>
+		<script type="text/javascript" src="scripts/angular/angular-animate.js"></script>
+		<script type="text/javascript" src="scripts/angular/angular-aria.js"></script>
+		<script type="text/javascript" src="scripts/angular/angular-material.js"></script>
+
+		<script type="text/javascript" src="scripts/application/main.js"></script>
+		<script type="text/javascript" src="scripts/application/PageController.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="stylesheets/screen.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/angular-material.css" />
 	</head>
 	<body>
-		<header>
-			<h1>Mein Super Verein</h1>
+		<header ng-include="'header.html'">
 		</header>
-		<footer>
-			<p>Rechtliche Hinweise</p>
+		<article ng-view>
+
+		</article>
+		<footer ng-include="'footer.html'">
 		</footer>
 	</body>
 </html>
