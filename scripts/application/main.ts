@@ -1,4 +1,5 @@
 /// <reference path="../typedef/angular.d.ts" />
+/// <reference path="../typedef/angular-material.d.ts" />
 
 angular.module("app", ['ngRoute', 'ngMaterial']).config([
 	'$controllerProvider', function($controllerProvider) {
@@ -23,3 +24,16 @@ angular.module("app", ['ngRoute', 'ngMaterial']).config([
 	]).config(['$mdIconProvider', function ($mdIconProvider) {
 		$mdIconProvider.defaultIconSet("stylesheets/img/material-icons.svg", 24);
 	}]);
+
+module WebEngineering {
+	export class MainController{
+		constructor(private $scope: any, private $mdSidenav: angular.material.MDSidenavService) {
+			$scope.controller = this;
+		}
+
+		public toggleSidenav()
+		{
+			this.$mdSidenav('left').toggle();
+		}
+	}
+}
