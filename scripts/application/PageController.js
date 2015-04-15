@@ -5,7 +5,7 @@ var WebEngineering;
         function PageController($scope, $routeParams) {
             this.$scope = $scope;
             this.$routeParams = $routeParams;
-            $scope.title = $routeParams.name;
+            $scope.page_url = "pages/" + $routeParams.id + ".html";
         }
         return PageController;
     })();

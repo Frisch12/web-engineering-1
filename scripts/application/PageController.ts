@@ -2,12 +2,12 @@
 
 module WebEngineering {
 	export interface PageScope extends angular.IScope {
-		title: string;
+		page_url: string;
 	}
 
 	export class PageController {
 		constructor(private $scope: PageScope, private $routeParams: any){
-			$scope.title = $routeParams.name;
+			$scope.page_url = "pages/" + $routeParams.id + ".html";
 		}
 	}
 }
